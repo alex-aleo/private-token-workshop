@@ -1,6 +1,6 @@
-![](./images/aleo-workshop2.png)
-
 # Aleo Workshop - Compliant Private Tokens
+
+![](./images/aleo-workshop2.png)
 
 This is a workshop for building compliant and privacy-preserving tokens on the Aleo blockchain.  
 
