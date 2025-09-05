@@ -2,7 +2,7 @@ import workshop_ofac.aleo;
 
 /*
 ====================================================================================================================
-TASK 0: Name your token
+TASK 0: Name Your Token
 
 TODO: 
     1. Choose what your token program will be named! This should be longer than 10 characters to avoid additional
@@ -33,11 +33,11 @@ program token.aleo {
     ====================================================================================================================
     TASK 1: Mint (Public)
 
-    This function mints new tokens by updating the public mapping value of the recipient
+    This feature mints new tokens by updating the public mapping value of the recipient
     
     TODO:
         `mint_public`:
-            1. Query the `address_check` function in `ofac.aleo` with the `recipient` field
+            1. Query the `address_check` function in `workshop_ofac.aleo` with the `recipient` field
             2. Pass the returned Future and other appropriate fields to the `mint_public_onchain` function
 
         `mint_public_onchain`:
@@ -74,11 +74,11 @@ program token.aleo {
     ====================================================================================================================
     TASK 2: Mint (Private)
 
-    This function mints new tokens by initializing a new record with the specified amount of tokens for the recipient.
+    This feature mints new tokens by initializing a new record with the specified amount of tokens for the recipient.
     
     TODOs: 
         `mint_private`:
-            1. Query the `address_check` function in `ofac.aleo` with the `recipient` field
+            1. Query the `address_check` function in `workshop_ofac.aleo` with the `recipient` field
             2. Initialize a Token record with the `recipient` as the owner and the `amount` as the amount
             3. Return the Token record and pass the Future to the `mint_private_onchain` function
 
@@ -95,7 +95,6 @@ program token.aleo {
 
     }
     async function mint_private_onchain(
-        recipient : address,
         address_check : Future
     ){
         // TODO: Fill in here
@@ -109,19 +108,19 @@ program token.aleo {
     ====================================================================================================================
     TASK 3: Transfer (Public)
 
-    This function publicly transfers tokens between two users by deducting the transfer amount from the sender's balance
+    This feature publicly transfers tokens between two users by deducting the transfer amount from the sender's balance
     in the public mapping and adding the same value to the recipient's balance
     
     TODO:
         `transfer_public`:
-            1. Query the `address_check` function in `ofac.aleo` with the `recipient` field
+            1. Query the `address_check` function in `workshop_ofac.aleo` with the `recipient` field
             2. Pass the returned Future and other appropriate fields to the `transfer_public_onchain` function
                 - For the `sender` field, you can use `self.signer` to specify the address that initialized the function call
 
         `transfer_public_onchain`:
             1. Await the `address_check` Future
-            2. Set the value for `sender` in the `balances` mapping to the current value minus `amount` 
-            3. Set the value for `recipient` in the `balances` mapping to the current value plus `amount` 
+            2. Set the value for `sender` in the `balances` mapping to the sender's current value minus `amount` 
+            3. Set the value for `recipient` in the `balances` mapping to the recipient's current value plus `amount` 
     
     ====================================================================================================================  
     */
@@ -148,13 +147,13 @@ program token.aleo {
     ====================================================================================================================
     TASK 4: Transfer (Private)
 
-    This function privately transfers tokens between two users by consuming the sender's Token record and producing two 
+    This feature privately transfers tokens between two users by consuming the sender's Token record and producing two 
     new Token records.  The first is a Token record for the recipient with the amount sent, and the second is a new Token 
     record for the sender with the leftover amount.
     
     TODO:
         `transfer_private:
-            1. Query the `address_check` function in `ofac.aleo` with the `recipient` field
+            1. Query the `address_check` function in `workshop_ofac.aleo` with the `recipient` field
             2. Initialize a Token record with the `recipient` as the owner and the `amount` as the amount
             3. Initialize a Token record with the `sender` as the owner and the remaining balance as the amount
             4. Return both Token records and pass the Future to the `mint_private_onchain` function
