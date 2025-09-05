@@ -17,19 +17,19 @@ By the end of the workshop, developers should learn:
 
 # Getting Started
 
-## Leo Playground
+### Leo Playground
 If you're new to developing or just want to try out the Leo language, check out the **[Leo Playground](https://play.leo-lang.org)**. It's a web-based IDE that's designed to allow developers to build, deploy, and execute programs, all in the browser!  It comes with an editor, Github integrations, and a number of utilities to manage programs and interface with the network.
 
-## VSCode / Sublime Text / IntelliJ
+### VSCode / Sublime Text / IntelliJ
 For more experienced developers, the Leo team also maintains plugins for a number of different editors.  For specifics on how to install for your favorite editor, check out the **[Dev Env](https://docs.leo-lang.org/getting_started/ide)** guide for more information
 
 You'll also need to have the Leo CLI (and Rust) installed locally.  Check out the **[Installation](https://play.leo-lang.org)** guide for more information.
 
-## Testnet Faucet
+### Testnet Faucet
 You'll need some Testnet tokens to deploy your program onchain.  Head over to INSERT_LINK_HERE to acquire some.
 
 
-## Additional Resources:
+### Additional Resources:
 - [Aleo Developer Docs](https://developer.aleo.org) 
 
 - [Leo Docs](https://docs.leo-lang.org)
@@ -38,7 +38,7 @@ You'll need some Testnet tokens to deploy your program onchain.  Head over to IN
 
 
 # Repository Overview
-## `token_template/`
+### `token_template/`
 This is the Leo project where you will be doing all of your coding. Some basic features have been included, including a `record` type for private balances and a `mapping` to keep track of public balances
 
 In addition, the function signatures/headers have already been provided for you, as well as a list of features you will need to fill in for each function.
@@ -47,7 +47,7 @@ In addition, the function signatures/headers have already been provided for you,
 <!-- Finally, a set of test cases has been written for you to check your work.  Simply run `leo test` from the command line while in the project directory. -->
 
 
-## `workshop_ofac/`
+### `workshop_ofac/`
 The `workshop_ofac.aleo` program is designed to mimic an onchain compliance check. It contains a simple `mapping` of mock "OFAC-sanctioned addresses" and a `transition` function to validate addresses against that mapping.  
 
 This program is already deployed on Testnet, and is added as a remote network dependency in the `token_template` Leo project.  It is here purely for reference. You should **NOT** need to  edit/use anything in `workshop_ofac/` or edit your `token_template/` dependencies.
