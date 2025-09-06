@@ -121,8 +121,8 @@ This is an `async function` that is executed onchain.
 ## Task 4: Transfer (Private)
 
 
-This feature privately transfers tokens between two users by consuming the sender's Token record and producing two 
-new Token records.  The first is a Token record for the recipient with the amount sent, and the second is a new Token record for the sender with the leftover amount.
+This feature privately transfers tokens between two users by consuming the sender's `Token` record and producing two 
+new `Token` records.  The first is owned by the recipient with the amount sent, and the second is owned by the sender with any leftover amount.
 
 ### `transfer_private`:
 This is an `async transition` that is executed offchain and has its corresponding zero-knowledge proof verified onchain.  
