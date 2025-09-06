@@ -65,7 +65,7 @@ First, we're going to build a token program in Leo by filling in the provided te
 ## Task 0: Name Your Token
 Choose what your token program will be named!  This should be longer than 10 characters to avoid additional network fees.  It should also not conflict with any existing program on the network.
 
-Once you've decided on a name, change the name of the program at the top of `main.leo`.  Finally, change the "program" field in the `program.json` file to match the name of your new program.  These two fields **MUST** match or your program will not compile correctly.
+Once you've decided on a name, change the name of the program at the top of `main.leo`.  Additionally, change the "program" field in the `program.json` file to match the name of your new program.  These two fields **MUST** match or your program will not compile correctly.
 
 ## Task 1: Mint (Public)
 This feature mints new tokens by updating the public mapping value for the recipient.  In line with Aleo's `async` model, it is split into two separate functions:
