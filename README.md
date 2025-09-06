@@ -144,10 +144,12 @@ This is an `async function` that is executed onchain.
 # Deploy and Interact Onchain
 Now that you've built and tested your program, you're ready to deploy your program to Testnet.  This is where you'll need the Testnet credits mentioned earlier.
 
-You should now be able to interact with your deployed program onchain.
+After deploying, you should now be able to interact with your deployed program onchain.
 1. Publicly mint 100 tokens to your address
 
 2. Publicly transfer those tokens to `<WORKSHOP_ADDRESS>`
+   
 3. Privately mint an additional 100 tokens to your address
+   
 4. Privately transfer those tokens to `<WORKSHOP_ADDRESS>`
 
