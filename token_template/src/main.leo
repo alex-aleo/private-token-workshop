@@ -187,12 +187,19 @@ program token.aleo {
     BONUS TASKS:
 
     For those looking for an extra challenge, implement the following additional functions:
-        - convert_public_to_private()
-        - convert_private_to_public()
         - transfer_private_to_public()
         - transfer_public_to_private()
 
-    Don't forget to include the OFAC compliance check!
+    Additionally, in practice you'll likely want to have some advanced functionality, such as allowing authorized users and programs
+    to manage your funds:
+        - approve_public [will require an additional `allowances` mapping]
+        - approve_private
+        - transfer_from() [Aleo only supports public transfer_from due to how records are implemented]
+        - burn_public()
+        - burn_private()
+
+
+    Don't forget to include OFAC compliance checks!
     
     ====================================================================================================================  
     */
