@@ -20,6 +20,8 @@ By the end of the workshop, developers should learn:
 ### Leo Playground
 If you're new to developing or just want to try out the Leo language, check out the **[Leo Playground](https://play.leo-lang.org)**. It's a web-based IDE that's designed to allow developers to build, deploy, and execute programs, all in the browser!  It comes with an editor, Github integrations, and a number of utilities to manage programs and interface with the network.
 
+You can load the project directly into the Leo Playground by navigating into the `private-token-workshop-token-template/` submodule and using the loading that repo using the Git feature of the playground.
+
 ### VSCode / Sublime Text / IntelliJ
 For more experienced developers, the Leo team also maintains plugins for a number of different editors.  For specifics on how to install for your favorite editor, check out the **[Dev Env](https://docs.leo-lang.org/getting_started/ide)** guide for more information
 
@@ -38,7 +40,7 @@ You'll need some Testnet tokens to deploy your program onchain.  Head over to IN
 
 
 # Repository Overview
-### `token_template/`
+### `private-token-workshop-token-template/`
 This is the Leo project where you will be doing all of your coding. Some basic features have been included, including a `record` type for private balances and a `mapping` to keep track of public balances
 
 In addition, the function signatures/headers have already been provided for you, as well as a list of features you will need to fill in for each function.
