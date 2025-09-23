@@ -1,0 +1,3 @@
+[submodule "private-token-workshop-token-template"]
+	path = private-token-workshop-token-template
+	url = https://github.com/alex-aleo/private-token-workshop-token-template.git
