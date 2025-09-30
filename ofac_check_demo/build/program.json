@@ -1,8 +1,9 @@
 {
-  "program": "workshop_ofac.aleo",
+  "program": "ofac_check_demo.aleo",
   "version": "0.1.0",
   "description": "",
-  "license": "MIT",
+  "license": "",
+  "leo": "3.2.0",
   "dependencies": null,
   "dev_dependencies": null
 }

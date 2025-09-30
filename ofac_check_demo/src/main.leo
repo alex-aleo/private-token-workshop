@@ -1,5 +1,5 @@
 // The 'ofac' program.
-program workshop_ofac.aleo {
+program ofac_check_demo.aleo {
     mapping sanctioned: field => bool;
     const ADMIN : address = aleo16ee2zncu2t6ftcpnnnmyd3c6pf8eu2xfyksh23amwqgvapp6mg8q8hy7e0;
 

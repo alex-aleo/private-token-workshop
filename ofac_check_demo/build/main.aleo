@@ -1,4 +1,4 @@
-program workshop_ofac.aleo;
+program ofac_check_demo.aleo;
 
 mapping sanctioned:
     key as field.public;
@@ -8,7 +8,7 @@ function address_check:
     input r0 as address.private;
     hash.psd2 r0 into r1 as field;
     async address_check r1 into r2;
-    output r2 as workshop_ofac.aleo/address_check.future;
+    output r2 as ofac_check_demo.aleo/address_check.future;
 
 finalize address_check:
     input r0 as field.public;
@@ -22,7 +22,7 @@ function add_sanctioned_addresses:
     assert.eq r1 true;
     hash.psd2 r0 into r2 as field;
     async add_sanctioned_addresses r2 into r3;
-    output r3 as workshop_ofac.aleo/add_sanctioned_addresses.future;
+    output r3 as ofac_check_demo.aleo/add_sanctioned_addresses.future;
 
 finalize add_sanctioned_addresses:
     input r0 as field.public;
@@ -34,7 +34,7 @@ function remove_sanctioned_addresses:
     assert.eq r1 true;
     hash.psd2 r0 into r2 as field;
     async remove_sanctioned_addresses r2 into r3;
-    output r3 as workshop_ofac.aleo/remove_sanctioned_addresses.future;
+    output r3 as ofac_check_demo.aleo/remove_sanctioned_addresses.future;
 
 finalize remove_sanctioned_addresses:
     input r0 as field.public;
